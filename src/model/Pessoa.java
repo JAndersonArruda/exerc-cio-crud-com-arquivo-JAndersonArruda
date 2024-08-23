@@ -4,10 +4,12 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Pessoa implements Serializable {
+    private long serialVersionUID;
     private String nome;
     private String email;
 
     public Pessoa(String nome, String email) {
+        serialVersionUID = 1L;
         this.nome = nome;
         this.email =email;
     }
